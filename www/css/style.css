@@ -1,1 +1,10 @@
 /* Empty. Add your own CSS if you like */
+.backgroundImage {
+  background-image: url("../img/background.jpg");
+  background-size: cover; 
+}
+
+
+.spacer{
+	margin-top: 40%;
+}

@@ -1,25 +1,29 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+<ion-view hide-back-button="true" cache-view="true">
+  <ion-content class="content-stable backgroundImage" padding="true">
+    <div class="logo">
+       <img src="">
     </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form>
+    <div class="spacer">
+      
+    </div>
+    <div class="login">
+      <form >
+        <div class="list list-inset">
+          <label class="item item-input">
+            <i class="icon ion-iphone"></i>
+            <input type="text" name="mobile" placeholder="Mobile Number">
+          </label>
+          <label class="item item-input"> 
+            <i class="icon ion-ios-locked-outline"></i>
+            <input type="password" name="password" placeholder="password">
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="">
+      <button class="button button-full button-medium button-balanced" ng-click="login()">Login</button>
+   
+      <button class="button button-full button-positive button-medium" ng-click="signup()">New Registration</button>
+    </div>
   </ion-content>
-</ion-modal-view>
+</ion-view>
